@@ -23,9 +23,7 @@
 .intro-caption{display:none}
 @keyframes writeSignature{0%{clip-path:inset(0 100% 0 0);opacity:.15;filter:blur(3px)}35%{opacity:.7;filter:blur(1px)}100%{clip-path:inset(0 -3% 0 0);opacity:1;filter:blur(0)}}
 @media(max-width:600px){.signature>svg{margin-right:8px}}
-/* Trace each pen stroke in order over the still-visible page. */
-.intro-ink{width:min(76vw,690px);height:auto;overflow:visible;transform-origin:top left;filter:drop-shadow(0 3px 3px #e8545033)}
-.intro-ink path{stroke:#963b39;stroke-width:3.2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:1;animation:inkTrace .43s cubic-bezier(.33,.02,.48,1) forwards;animation-delay:calc(var(--stroke-index)*.43s)}
-.intro-ink path:nth-last-child(-n+2){stroke-width:3.7;animation-duration:.22s;animation-delay:4.35s}
-@keyframes inkTrace{to{stroke-dashoffset:0}}
-@media(max-width:600px){.intro-ink{width:min(94vw,690px)}.intro-ink path{stroke-width:4.4}}
+/* Reveal the actual Great Vibes glyphs with paths traced from that font. */
+.intro-ink{width:min(76vw,600px)}
+.ink-path{fill:none;stroke:#fff;stroke-width:19;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:1;animation:inkTrace var(--ink-duration) linear var(--ink-delay) forwards}
+@media(max-width:600px){.intro-ink{width:min(94vw,600px)}}
