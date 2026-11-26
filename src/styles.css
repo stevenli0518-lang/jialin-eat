@@ -14,3 +14,12 @@
 @keyframes introBackdrop{0%,67%{background-color:#fff3e7}100%{background-color:#fff3e700}}
 @media(max-width:600px){.intro-word{font-size:clamp(62px,16vw,92px)}.intro-caption{top:calc(50% + 50px)}}
 @media(prefers-reduced-motion:reduce){.signature-intro{display:none}.signature.intro-hidden{visibility:visible}}
+/* Transparent signature entrance: the page remains visible throughout. */
+.signature{gap:0}
+.signature>svg{margin-right:14px}
+.signature .signature-name.intro-hidden{visibility:hidden}
+.signature-intro{background:transparent;animation:none}
+.intro-word{animation:writeSignature 3.4s cubic-bezier(.28,.04,.34,1) forwards;filter:drop-shadow(0 5px 5px #f5afa67a)}
+.intro-caption{display:none}
+@keyframes writeSignature{0%{clip-path:inset(0 100% 0 0);opacity:.15;filter:blur(3px)}35%{opacity:.7;filter:blur(1px)}100%{clip-path:inset(0 -3% 0 0);opacity:1;filter:blur(0)}}
+@media(max-width:600px){.signature>svg{margin-right:8px}}
