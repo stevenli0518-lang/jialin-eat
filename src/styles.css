@@ -4,3 +4,13 @@
 @media(max-width:480px){header{padding:0 14px}.signature span{font-size:25px}.signature>svg{width:25px}.share-btn{font-size:13px;padding:7px 12px}.share-btn>svg{width:17px}main{padding:25px 16px 0}h1{font-size:46px;margin-bottom:21px}h1 span:last-child{font-size:46px}h1 span{display:block}.city-switch{width:290px;height:49px}.city-switch button{font-size:25px}.area{font-size:11px;margin-bottom:18px}.wheel-rim{inset:7px;border-width:8px}.spin{width:34%;height:34%;border-width:6px;gap:4px}.spin span{font-size:25px}.spin>svg{width:22px;height:22px}.spin small{font-size:6px;letter-spacing:0}.pointer{width:55px;height:55px;top:-12px}.sector-icon{width:21px;height:21px}.spin.busy span{font-size:21px}.wheel-tools{font-size:10px;margin-top:9px;margin-bottom:21px}.result-heading h2{font-size:23px}.result>span{font-size:22px}.result{margin:0 2%;min-height:72px;gap:12px}.result>svg{width:30px}.list-heading{margin-top:28px}.result-top strong{font-size:27px}.has-result{padding:15px 17px}.list-heading h2{font-size:28px}.history{margin:14px 4% 0;font-size:10px;gap:8px}.history small{font-size:8px}.signature{gap:7px}dialog{padding:23px}.modal-head h2{font-size:26px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 .list-footer{background:#fff3e9d9;border-radius:12px;padding:3px 7px}
+/* The landing signature uses the same face as the header brand. */
+.signature.intro-hidden{visibility:hidden}
+.signature-intro{position:fixed;inset:0;z-index:100;display:grid;place-items:center;background:radial-gradient(circle at 50% 43%,#fff9f1 0,#ffe9df 62%,#ffd7cf 100%);overflow:hidden;animation:introBackdrop 2.8s ease forwards;pointer-events:none}
+.intro-word{font-family:'Great Vibes',cursive;font-size:clamp(74px,13vw,148px);color:#e85450;white-space:nowrap;line-height:1.3;transform-origin:top left;filter:drop-shadow(0 5px 4px #f5afa67a);position:relative;display:block;clip-path:inset(0 100% 0 0);animation:writeSignature 1.75s cubic-bezier(.32,.05,.34,1) forwards}
+.intro-caption{position:absolute;top:calc(50% + min(7vw,76px));font:600 12px Arial,sans-serif;letter-spacing:.35em;text-transform:uppercase;color:#b77869;animation:captionIn .7s .8s both}
+@keyframes writeSignature{0%{clip-path:inset(0 100% 0 0)}100%{clip-path:inset(0 -3% 0 0)}}
+@keyframes captionIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@keyframes introBackdrop{0%,67%{background-color:#fff3e7}100%{background-color:#fff3e700}}
+@media(max-width:600px){.intro-word{font-size:clamp(62px,16vw,92px)}.intro-caption{top:calc(50% + 50px)}}
+@media(prefers-reduced-motion:reduce){.signature-intro{display:none}.signature.intro-hidden{visibility:visible}}
