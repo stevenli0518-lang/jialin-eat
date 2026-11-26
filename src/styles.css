@@ -26,4 +26,5 @@
 /* Reveal the actual Great Vibes glyphs with paths traced from that font. */
 .intro-ink{width:min(76vw,600px)}
 .ink-path{fill:none;stroke:#fff;stroke-width:19;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:1;animation:inkTrace var(--ink-duration) linear var(--ink-delay) forwards}
+@keyframes inkTrace{to{stroke-dashoffset:0}}
 @media(max-width:600px){.intro-ink{width:min(94vw,600px)}}
