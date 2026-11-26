@@ -17,3 +17,4 @@ The entrance writes the exact Great Vibes header font with visible, substantial 
 The signature should follow normal cursive writing order, with connected letters traced as flowing strokes rather than revealing disconnected segments by x-position.
 Each letter of "Li Jiajun" should trace from its natural entry to its exit before the next letter begins. Letter dots can follow their stems. Never start a letter from an internal segment merely because that segment has a smaller x-coordinate.
 Keep pen movement smooth with no perceptible pauses on retraced branches. After writing, the entire signature moves directly and quickly along a diagonal into the fixed header name, with its center staying on that line; avoid an upward motion before horizontal movement.
+The capital L is a single continuous Bézier pen stroke from its upper entry, through the top loop and lower flourish, to the terminal tail. Keep this fluid single-stroke treatment in future changes.
