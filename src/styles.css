@@ -28,3 +28,6 @@
 .ink-path{fill:none;stroke:#fff;stroke-width:19;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:var(--ink-length);stroke-dashoffset:var(--ink-length);animation:inkTrace var(--ink-duration) linear var(--ink-delay) forwards}
 @keyframes inkTrace{to{stroke-dashoffset:0}}
 @media(max-width:600px){.intro-ink{width:min(94vw,600px)}}
+
+/* Keep the signature center on a direct diagonal as it shrinks into the header. */
+.intro-ink{transform-origin:center center;will-change:transform}
