@@ -15,3 +15,4 @@ Cream peach background, coral/mint/butter/lavender palette. Left title/list and 
 ## Signature animation decision
 The entrance writes the exact Great Vibes header font with visible, substantial pen strokes over the transparent page. The "Produced by" label stays in place; the name is blank until the completed signature lands there. The reference is the user's 4.8-second signature video supplied on 2026-11-26.
 The signature should follow normal cursive writing order, with connected letters traced as flowing strokes rather than revealing disconnected segments by x-position.
+Each letter of "Li Jiajun" should trace from its natural entry to its exit before the next letter begins. Letter dots can follow their stems. Never start a letter from an internal segment merely because that segment has a smaller x-coordinate.
